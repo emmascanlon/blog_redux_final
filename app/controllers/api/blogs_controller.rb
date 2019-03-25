@@ -5,7 +5,7 @@ before_action :set_blog, only: [:update, :destroy, :show]
   end
 
   def show
-    renderjson: @blog
+    render json: @blog
   end
 
   def create
