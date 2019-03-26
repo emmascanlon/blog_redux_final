@@ -9,7 +9,7 @@ before_action :set_blog, only: [:update, :destroy, :show]
   end
 
   def create
-    blog = Blod.new(blog_params)
+    blog = Blog.create(blog_params)
     if blog.save
       render json: blog
     else
